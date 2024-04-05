@@ -1,0 +1,106 @@
+.chatbot-wrapper{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.chatbot-app{
+    /* background-color: lightblue; */
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.chatbot-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #233BEF;
+}
+.chat-interface{
+    /* background-color: lightcoral; */
+    width: 60%;
+    height: 75%;
+    position: relative;
+}
+.display-container{
+    height: 92%;
+    overflow-y: scroll;
+    background-color: #F6ED85;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.display-container::-webkit-scrollbar{
+    display: none;
+}
+.message-block{
+    margin: 3px 0px;
+    /* background-color: lightgreen; */
+    display:  flex;
+    flex-direction: column;
+    /* transition: all 0.5s ease-in-out; */
+}
+.user-message{
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #50F24A;
+    padding: 5px 20px;
+    border-radius: 10px 15px 0px 15px;
+    animation: popup 0.5s ;
+}
+.bot-message{
+    margin-right: auto;
+    margin-left: 20px;
+    background-color: #50F24A;
+    padding: 5px 20px;
+    border-radius: 15px 10px 15px 0px ;
+    animation: popup 0.5s ; 
+}
+.submit-btn{
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+.chat-input-container{
+    background-color: #F6ED85;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* border-radius: 10px; */
+    border-top: 2px solid black;
+}
+.chat-input-container input{
+    width: 90%;
+    outline: none;
+    height: 80%;
+    border: 1px solid black;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.submit-btn img{
+    width: 20px;
+}
+@keyframes popup {
+    0%{
+        transform: translateY(20px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
